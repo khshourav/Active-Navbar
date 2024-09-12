@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Nav Bar</title>
+    <style>
+        *{
+            color:black;
+            text-decoration: none;
+        }
+        .navbar{
+            height: 80px;
+            width: 100%;
+            background-color: blue;
+            color: aliceblue;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+
+            position: fixed;
+            top: 0;
+        }
+        .nav{
+            width: 30%;
+            
+        }
+        .nav a h1{
+            display: inline-block;
+            padding: 1rem;
+            border-radius: 8px;
+            color: aliceblue;
+        }
+        .nav a h1:hover{
+            /* background-color: aqua; */
+            color: salmon;
+        }
+        section{
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- nav section -->
+    <section1>
+        <div class="navbar">
+            <div class="nav">
+                <h1 style="color: orange;">AnimeVerse</h1>
+            </div>
+            <div class="nav">
+                <a href="#home"><h1>Home</h1></a>
+                <a href="#about"><h1>About</h1></a>
+                <a href="#serices"><h1>Services</h1></a>
+            </div>
+            <div class="nav">
+                <a href="#contact"><h1>Contact Us</h1></a>
+            </div>
+        </div>
+    </section1>
+
+    <!-- Home section -->
+     <section id="home" style="background-color: antiquewhite;">
+        <div class="box">
+            <h1>This is Home</h1>
+        </div>
+     </section>
+     <!-- About section -->
+     <section id="about" style="background-color: goldenrod;">
+        <div class="box">
+            <h1>This is About</h1>
+        </div>
+     </section>
+     <!-- Service  section -->
+     <section id="serices" style="background-color: grey;">
+        <div class="box">
+            <h1>This is Services</h1>
+        </div>
+     </section>
+     <!-- Contact section -->
+     <section id="contact" style="background-color: gold;">
+        <div class="box">
+            <h1>This is Contact</h1>
+        </div>
+     </section>
+     <script src="script.js"></script>
+</body>
+</html>
